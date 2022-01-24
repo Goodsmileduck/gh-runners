@@ -15,7 +15,7 @@
 
 # install jq
 apt-get update
-apt-get -y install jq
+apt-get -y install jq git unzip
 
 # access secret from secretsmanager
 secrets=$(gcloud secrets versions access latest --secret="runner-secret")
